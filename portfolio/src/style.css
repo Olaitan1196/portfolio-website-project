@@ -1,0 +1,106 @@
+body.dark {
+  background: #0f0f0f;
+  color: white;
+}
+
+body.light {
+  background: #ffffff;
+  color: #111;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6c63ff, #00c6ff);
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  padding: 25px;
+  border-radius: 15px;
+  margin: 20px 0;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.toggle {
+  margin-left: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark p {
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Links container */
+.nav-links {
+  display: flex;
+  gap: 30px; /* THIS is the magic spacing */
+}
+
+/* Individual links */
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Hover effect (clean underline animation) */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: currentColor;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
